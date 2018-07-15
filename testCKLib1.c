@@ -3,7 +3,7 @@
 //  testCKLib1
 //
 //  Created by Corey Smith on 7/15/18.
-//  Copyright © 2018 srs. All rights reserved.
+//  Copyright © 2018 srs. All rights reserved..
 //
 
 #include "testCKLib1.h"
