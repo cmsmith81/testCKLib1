@@ -6,8 +6,15 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4AEF231420FBD39300DC1270 /* testCKLib1.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AEF231220FBD39300DC1270 /* testCKLib1.h */; };
+		4AEF231520FBD39300DC1270 /* testCKLib1.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF231320FBD39300DC1270 /* testCKLib1.c */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4AEF230920FBD29A00DC1270 /* libtestCKLib1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtestCKLib1.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEF231220FBD39300DC1270 /* testCKLib1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testCKLib1.h; sourceTree = "<group>"; };
+		4AEF231320FBD39300DC1270 /* testCKLib1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = testCKLib1.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +31,8 @@
 		4AEF230020FBD29A00DC1270 = {
 			isa = PBXGroup;
 			children = (
+				4AEF231220FBD39300DC1270 /* testCKLib1.h */,
+				4AEF231320FBD39300DC1270 /* testCKLib1.c */,
 				4AEF230A20FBD29A00DC1270 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +52,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AEF231420FBD39300DC1270 /* testCKLib1.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +112,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AEF231520FBD39300DC1270 /* testCKLib1.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +173,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = watchos4.3;
 			};
 			name = Debug;
 		};
@@ -213,13 +224,14 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
+				SDKROOT = watchos4.3;
 			};
 			name = Release;
 		};
 		4AEF230E20FBD29A00DC1270 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7k;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5H2G252DK3;
 				EXECUTABLE_PREFIX = lib;
@@ -231,6 +243,7 @@
 		4AEF230F20FBD29A00DC1270 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7k;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5H2G252DK3;
 				EXECUTABLE_PREFIX = lib;
